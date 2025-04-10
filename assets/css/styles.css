@@ -1,0 +1,487 @@
+:root {
+    --color-almost-white: #FFFDFA;
+    --color-dark-space-blue: #00001A;
+    --color-gun-metal: #5E607A;
+    --color-light-vermillion: #F15D51;
+    --color-silver: #C5C6CE;
+    --color-yellow: #E9AA52;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url('./../fonts/static/Inter-Regular.ttf');
+    font-optical-sizing: auto;
+    /* font-weight: 400; */
+}
+
+@font-face {
+    font-family: "Inter Bold";
+    src: url('./../fonts/static/Inter-Bold.ttf');
+    font-optical-sizing: auto;
+    /* font-weight: bold; */
+}
+
+@font-face {
+    font-family: "Inter ExtraBold";
+    src: url('./../fonts/static/Inter-ExtraBold.ttf');
+    font-optical-sizing: auto;
+    /* font-weight: bolder; */
+}
+
+
+.text-heading-xl {
+    font-weight: bolder;
+    font-family: "Inter ExtraBold";
+    font-size: 2.4rem;
+    letter-spacing: 0px;
+    line-height: 2.4rem;
+}
+
+.text-heading-l {
+    font-weight: bold;
+    font-family: "Inter Bold";
+    font-size: 2.4rem;
+    letter-spacing: 0rem;
+    line-height: 2.4rem;
+}
+
+.text-heading-m {
+    font-weight: bold;
+    font-family: "Inter Bold";
+    font-size: 32px;
+    letter-spacing: 0rem;
+    line-height: 32px;
+}
+
+.text-heading-s {
+    font-weight: bolder;
+    font-family: "Inter ExtraBold";
+    font-size: 1.25rem;
+    letter-spacing: 0px;
+    line-height: 1.5rem;
+}
+
+.text-heading-xs {
+    font-weight: bolder;
+    font-family: "Inter ExtraBold";
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 1.5rem;
+}
+
+.text-body {
+    /* font-weight: normal; */
+    font-family: "Inter";
+    font-size: 0.938rem;
+    letter-spacing: 0rem;
+    line-height: 1.625rem;
+}
+
+.font-inter {
+    font-family: "Inter";
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter";
+}
+
+.hidden {
+    display: none !important;
+}
+
+.show {
+    display: block !important;
+}
+
+button {
+    width: 11.563rem;
+    height: 3rem;
+    font: bold;
+    font-size: 0.875rem;
+    background-color: var(--color-light-vermillion);
+    border: none;
+    letter-spacing: 0.274rem;
+    line-height: 1.5rem;
+    color: var(--color-almost-white);
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-gun-metal);
+}
+
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+    /* disables body scroll */
+    font-size: 16px;
+    background-color: var(--color-almost-white);
+}
+
+main {
+    height: 100%;
+    overflow-y: auto;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+.body-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+nav {
+    display: none;
+}
+
+
+/* header styles */
+
+header {
+    margin-top: 1.75rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header>button {
+    background-color: transparent;
+}
+
+.toogle-button {
+    width: fit-content;
+    width: 2.4rem;
+    height: 1.063rem;
+}
+
+ul,
+li {
+    list-style: none;
+    color: var(--color-gun-metal);
+}
+
+nav>ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+/* hero section styles */
+.hero {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    width: 100%;
+}
+
+
+.hero-left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+}
+
+.hero-right {
+
+    background-color: var(--color-dark-space-blue);
+    color: var(--color-almost-white);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1.5rem;
+    padding-left: 1.313rem;
+    padding-right: 1.313rem;
+}
+
+.hero-image {
+    width: 100%;
+    overflow: hidden;
+    height: 18.75rem;
+}
+
+.hero-image>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-desc {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.hero-title {
+    display: flex;
+    flex: 50%;
+}
+
+.hero-info {
+    display: flex;
+    flex-direction: column;
+    color: var(--color-gun-metal);
+    flex: 50%;
+    gap: 1.5rem;
+}
+
+
+
+.hero-right>h3 {
+    color: var(--color-yellow);
+}
+
+/* new article box styles */
+
+.new-articles {
+    display: flex;
+    flex-direction: column;
+    gap: 1.938rem;
+
+}
+
+.new-articles>article {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.new-articles>article>h3 {
+    color: var(--color-almost-white);
+}
+
+.new-articles>article>p {
+    color: var(--color-silver);
+}
+
+.new-articles article:not(:last-child) {
+    border-bottom: 1px solid #5E607A;
+    padding-bottom: 1.813rem;
+}
+
+/* rated articles styles */
+
+.bottom-article {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 5rem;
+}
+
+
+.bottom-article>article {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    flex: 1;
+}
+
+.bottom-article>article>img {
+    height: 8.063rem;
+    width: 6.25rem;
+}
+
+.bottom-article>article>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.leading-num {
+    color: var(--color-silver);
+}
+
+.bottom-article>article>div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.bottom-artitcle-disc {
+    color: var(--color-gun-metal);
+}
+
+.sm-nav-slider {
+    height: 100vh;
+    width: 100vw;
+    background-color: #00001a72;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.sm-nav-slider>div {
+    width: 30%;
+    background-color: transparent;
+}
+
+.sm-nav-slider>.slider-content {
+    display: flex;
+    flex-direction: column;
+    width: 68.27%;
+    background-color: var(--color-almost-white);
+    height: 100%;
+    color: #00001A;
+}
+
+.slider-content > .slider-header > button {
+    background-color: transparent;
+    width: 1.901rem;
+    height: 1.901rem;
+}
+.slider-content > .slider-header > button > img {
+    width: 1.901rem;
+    height: 1.901rem;
+}
+.slider-content > .slider-header {
+    margin-top: 1.706rem;
+    margin-right: 1.3rem;
+    margin-bottom: 5.394rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.slider-content > nav {
+    display: block;
+    padding-left: 1.5rem;
+    padding-right: 1.813rem;
+}
+
+.slider-content > nav >ul {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5rem;
+    color: var(--color-dark-space-blue);
+    font-family: "Inter";
+    font-weight: normal;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    letter-spacing: 0rem;
+}
+.attribution{
+    padding-bottom: 10px;
+}
+/* queries for large screen */
+@media screen and (min-width: 768px) {
+
+    .text-heading-xl {
+        font-weight: bolder;
+        font-family: "Inter ExtraBold";
+        font-size: 3.5rem;
+        letter-spacing: 0rem;
+        line-height: 3.5rem;
+    }
+
+    body {
+        padding: 0;
+    }
+
+    main {
+        padding-left: 10.313rem;
+        padding-right: 10.313rem;
+        padding-top: 89px;
+        gap: 3.756rem;
+    }
+
+    .body-container {
+        gap: 4.125rem;
+    }
+
+    .hero {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    nav {
+        display: block;
+    }
+
+    nav>ul>li>a:hover {
+        color: var(--color-light-vermillion);
+    }
+
+    header {
+        margin-top: 0rem;
+    }
+
+    header>button {
+        display: none;
+    }
+
+    .hero-left {
+        width: 66%;
+        flex-shrink: 0;
+        gap: 1.75rem;
+    }
+
+    .hero-right {
+        width: 34%;
+        padding: 2rem;
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+    }
+
+    .hero-right>.new-articles>article>h3:hover {
+        color: var(--color-yellow);
+        cursor: pointer;
+    }
+
+    .hero-desc {
+        flex-direction: row;
+        gap: 1.875rem;
+    }
+
+    .hero-info>button:hover {
+        background-color: var(--color-dark-space-blue);
+        cursor: pointer;
+    }
+
+    .bottom-article>article>img {
+        height: 7.938rem;
+        width: 6.25rem;
+    }
+
+    .bottom-article {
+        flex-direction: row;
+        margin-bottom: 8.063rem;
+    }
+
+    .bottom-article article:not(:last-child) {
+        flex-shrink: 0;
+    }
+
+    .bottom-article>article>div>h3:hover {
+        color: var(--color-light-vermillion);
+        cursor: pointer;
+    }
+
+    .sm-nav-slider {
+        display: none !important;
+    }
+    .attribution {
+        padding-bottom: 6rem;
+      }
+  
+}
