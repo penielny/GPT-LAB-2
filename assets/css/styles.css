@@ -28,6 +28,9 @@
     /* font-weight: bolder; */
 }
 
+h1 {
+    color: var(--color-dark-space-blue);
+}
 
 .text-heading-xl {
     font-weight: bolder;
